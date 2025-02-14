@@ -6,7 +6,7 @@
 /*   By: eel-garo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 17:23:05 by eel-garo          #+#    #+#             */
-/*   Updated: 2025/02/11 13:44:57 by eel-garo         ###   ########.fr       */
+/*   Updated: 2025/02/14 16:20:05 by eel-garo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,20 +15,29 @@
 static void	ft_fillarray(int *arr, t_list *list, int size_list)
 {
 	t_list	*curr;
-	int	i;
+	int		i;
 
 	i = 0;
 	curr = list;
-	while(i < size_list && curr != NULL)
+	while (i < size_list && curr != NULL)
 	{
 		arr[i++] = curr->number;
 		curr = curr->next;
 	}
 }
+
+void	ft_help_function_error(int *arr, t_list **list)
+{
+	ft_printf(2, "Error\n");
+	free(arr);
+	ft_lstclear(list);
+	exit(0);
+}
+
 void	ft_check_double(t_list *list)
 {
 	int		size_list;
-	int 	*arr;
+	int		*arr;
 	int		i;
 	int		j;
 
@@ -36,7 +45,7 @@ void	ft_check_double(t_list *list)
 	arr = malloc(sizeof(int) * size_list);
 	if (!arr)
 		return ;
-	ft_fillarray(arr,list, size_list);
+	ft_fillarray(arr, list, size_list);
 	i = 0;
 	while (i < size_list)
 	{
@@ -44,12 +53,7 @@ void	ft_check_double(t_list *list)
 		while (j < size_list)
 		{
 			if (arr[i] == arr[j])
-			{
-				ft_printf(2, "Error\n");
-				free(arr);
-				ft_lstclear(&list);
-				exit(0);
-			}
+				ft_help_function_error(arr, &list);
 			j++;
 		}
 		i++;

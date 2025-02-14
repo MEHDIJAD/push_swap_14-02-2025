@@ -6,7 +6,6 @@ SRCS   = push_swap.c \
 		 ft_index_stack_a.c \
 		 ft_print_list.c \
 		 ft_find_min.c \
-		 ft_min_moves.c \
 		 ft_find_max.c \
 		 ft_sorted.c \
 		 libft/ft_atoi.c \
@@ -31,6 +30,7 @@ SRCS_BONUS = bonus/checker_bonus.c \
              bonus/ft_op_rr_bonus.c \
              bonus/ft_op_rrr_bonus.c \
              bonus/ft_op_ss_bonus.c \
+             bonus/ft_sort_with_arg_bonus.c \
 			 ops/ft_op_swap.c \
 		 	 ops/ft_op_rotate.c \
 		 	 ops/ft_op_rrotate.c \

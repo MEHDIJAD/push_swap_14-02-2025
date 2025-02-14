@@ -6,7 +6,7 @@
 /*   By: eel-garo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 16:12:12 by eel-garo          #+#    #+#             */
-/*   Updated: 2025/02/08 18:09:56 by eel-garo         ###   ########.fr       */
+/*   Updated: 2025/02/14 16:21:23 by eel-garo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static void	ft_fill(char *str, t_list **list)
 			number = ft_atoi(&str[i]);
 			if (number > INT_MAX || number < INT_MIN)
 			{
-				ft_lstclear(list); 
+				ft_lstclear(list);
 				exit(0);
 			}
 			ft_lstadd_back(list, ft_lstnew(number));
@@ -36,7 +36,8 @@ static void	ft_fill(char *str, t_list **list)
 			i++;
 	}
 }
-void ft_fill_stack_a(char **vic, t_list **list)
+
+void	ft_fill_stack_a(char **vic, t_list **list)
 {
 	int	i;
 

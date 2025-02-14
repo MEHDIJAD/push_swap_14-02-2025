@@ -6,7 +6,7 @@
 /*   By: eel-garo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 12:59:10 by eel-garo          #+#    #+#             */
-/*   Updated: 2025/02/08 13:29:45 by eel-garo         ###   ########.fr       */
+/*   Updated: 2025/02/14 16:21:51 by eel-garo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_find_max(t_list **stack)
 	t_list	*curr;
 	int		max;
 	int		max_index;
-	int 	i;
+	int		i;
 
 	if (!stack || !*stack)
 		return (-1);

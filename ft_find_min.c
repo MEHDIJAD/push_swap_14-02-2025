@@ -6,7 +6,7 @@
 /*   By: eel-garo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 12:54:29 by eel-garo          #+#    #+#             */
-/*   Updated: 2025/02/08 13:17:36 by eel-garo         ###   ########.fr       */
+/*   Updated: 2025/02/14 16:22:09 by eel-garo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_find_min_place(t_list **stack)
 		if (curr->number < min)
 		{
 			min = curr->number;
-			min_index = i; 
+			min_index = i;
 		}
 		i++;
 		curr = curr->next;

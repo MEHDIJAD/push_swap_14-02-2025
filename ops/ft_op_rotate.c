@@ -6,7 +6,7 @@
 /*   By: eel-garo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/01 14:21:54 by eel-garo          #+#    #+#             */
-/*   Updated: 2025/02/12 12:58:12 by eel-garo         ###   ########.fr       */
+/*   Updated: 2025/02/14 16:44:56 by eel-garo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,16 @@ void	ft_op_rotate(t_list **stack, char *op)
 {
 	t_list	*first;
 	t_list	*last;
-	
+
 	if (!stack || !*stack || !(*stack)->next)
 		return ;
-	first = *stack; //* point to first number 
-	*stack = (*stack)->next; //* move to second number
-	first->next = NULL; //* detach the first node
-	last = *stack; //* point last to the head
-	while (last->next) //* move intel find the last node
+	first = *stack;
+	*stack = (*stack)->next;
+	first->next = NULL;
+	last = *stack;
+	while (last->next)
 		last = last->next;
-	last->next = first; //* add first to the end of list
+	last->next = first;
 	if (op)
 		ft_printf(1, "%s\n", op);
 }

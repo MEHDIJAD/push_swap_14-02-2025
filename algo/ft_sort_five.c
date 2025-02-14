@@ -6,7 +6,7 @@
 /*   By: eel-garo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/01 17:03:16 by eel-garo          #+#    #+#             */
-/*   Updated: 2025/02/08 15:21:13 by eel-garo         ###   ########.fr       */
+/*   Updated: 2025/02/14 16:46:43 by eel-garo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_sort_five(t_list **stack_a, t_list **stack_b)
 {
 	int	min;
-	
+
 	min = ft_find_min_place(stack_a);
 	if (min == 1)
 		ft_op_swap(stack_a, "sa");

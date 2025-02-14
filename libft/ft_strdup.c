@@ -6,7 +6,7 @@
 /*   By: eel-garo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 14:35:56 by eel-garo          #+#    #+#             */
-/*   Updated: 2025/02/11 14:38:28 by eel-garo         ###   ########.fr       */
+/*   Updated: 2025/02/14 16:40:02 by eel-garo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strdup(const char *s1)
 	if (!cpy)
 		return (NULL);
 	i = 0;
-	while(s1[i])
+	while (s1[i])
 	{
 		cpy[i] = s1[i];
 		i++;

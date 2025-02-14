@@ -6,7 +6,7 @@
 /*   By: eel-garo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 20:40:01 by eel-garo          #+#    #+#             */
-/*   Updated: 2025/02/01 17:51:00 by eel-garo         ###   ########.fr       */
+/*   Updated: 2025/02/14 16:26:11 by eel-garo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,12 @@
 static void	ft_print(t_list *stack, char c)
 {
 	t_list	*current;
-	
+
 	current = stack;
 	while (current != NULL)
 	{
 		ft_printf(1, "%d ", current->number);
 		ft_printf(1, "%d\n", current->index);
-		
 		current = current->next;
 	}
 	ft_printf(1, "---\n");
